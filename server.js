@@ -91,31 +91,6 @@ app.get('/jadwal-pramek-dari-purwosari', function(req, res){
   })
 })
 
-app.get('/jadwal-pramek-dari-purwosari', function(req, res){
-  url = 'http://www.prameks.com/solo-jogja-dari-stasiun-purwosari.html';
-  request(url, function(error, response, html){
-    if(!error){
-      var $ = cheerio.load(html);
-      var rows = []
-      $('#tab_1_2 div table tr').map(function(indexRow, row){
-        console.log($(row))
-        cols = []
-        $(row).children().map(function(indexCol, col) {
-          console.log($(col))
-          cols.push($(col).text().trim())
-        })
-        rows.push(cols.join(' | '))
-      });
-    }
-
-    fs.writeFile('output.txt', rows.join('\r\n'), function(err){
-      console.log('File successfully written! - Check your project directory for the output.txt file');
-    })
-
-    res.send(rows.join('\n'))
-  })
-})
-
 app.get('/jadwal-pramek-dari-klaten', function(req, res){
   url = 'http://www.prameks.com/dari-stasiun-klaten.html';
   request(url, function(error, response, html){
@@ -191,7 +166,7 @@ app.get('/jadwal-pramek-dari-lempuyangan', function(req, res){
   })
 })
 
-app.get('/jadwal-pramek-dari-yogyakarta', function(req, res){
+app.get('/jadwal-pramek-dari-tugu', function(req, res){
   url = 'http://www.prameks.com/dari-stasiun-tugu-yogyakarta.html';
   request(url, function(error, response, html){
     if(!error){
