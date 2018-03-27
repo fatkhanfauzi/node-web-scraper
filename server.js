@@ -62,6 +62,7 @@ app.get('/jadwal-pramek-dari-balapan', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.txt file');
     })
 
+    rows[0] = "*" + rows[0] + "*"
     res.send(rows.join('\n'))
   })
 })
@@ -87,6 +88,7 @@ app.get('/jadwal-pramek-dari-purwosari', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.txt file');
     })
 
+    rows[0] = "*" + rows[0] + "*"
     res.send(rows.join('\n'))
   })
 })
@@ -112,6 +114,7 @@ app.get('/jadwal-pramek-dari-klaten', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.txt file');
     })
 
+    rows[0] = "*" + rows[0] + "*"
     res.send(rows.join('\n'))
   })
 })
@@ -137,6 +140,7 @@ app.get('/jadwal-pramek-dari-maguwo', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.txt file');
     })
 
+    rows[0] = "*" + rows[0] + "*"
     res.send(rows.join('\n'))
   })
 })
@@ -162,6 +166,7 @@ app.get('/jadwal-pramek-dari-lempuyangan', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.txt file');
     })
 
+    rows[0] = "*" + rows[0] + "*"
     res.send(rows.join('\n'))
   })
 })
@@ -187,6 +192,7 @@ app.get('/jadwal-pramek-dari-tugu', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.txt file');
     })
 
+    rows[0] = "*" + rows[0] + "*"
     res.send(rows.join('\n'))
   })
 })
@@ -212,6 +218,7 @@ app.get('/jadwal-pramek-dari-kutoarjo', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.txt file');
     })
 
+    rows[0] = "*" + rows[0] + "*"
     res.send(rows.join('\n'))
   })
 })
